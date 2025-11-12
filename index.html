@@ -1,321 +1,337 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mood Café - Coffee Shop</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">mood</a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#menu" class="nav-link">Menu</a></li>
-                <li><a href="#reservation" class="nav-link">Reservation</a></li>
-            </ul>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mood Café — Brewed to perfection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="brand"><img src="assets/images/logo.png" /></a>
+        <ul class="menu">
+          <li><a class="link" href="#sobre-nos">Sobre nós</a></li>
+          <li><a class="link" href="#produtos">Nossos clássicos</a></li>
+          <li><a class="link" href="#eventos">Eventos</a></li>
+          <li><a class="link" href="#contatos">Contato</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <p class="hero-label">Welcome to Mood</p>
-            <h1 class="hero-title">Savor the Moment</h1>
-            <p class="hero-description">Experience the perfect blend of flavor and ambiance at Mood Café</p>
-            <a href="#menu" class="btn-primary">Explore Menu</a>
+    <!-- HERO -->
+    <main class="hero" id="home">
+      <header class="hero-head">
+        <h1 class="hero-title">DiMainha</h1>
+        <p>Autêntico Bolo de Rolo Pernambucano em Fortaleza/CE</p>
+        <a class="cta" href="https://pedido.anota.ai/loja/di-mainha-bolo-de-rolo?f=ms" target="_blank">Faça seu pedido</a>
+      </header>
+
+      <!-- CARROSSEL COVERFLOW -->
+      <section class="coverflow" aria-roledescription="carousel">
+        <button class="cf-arrow prev" aria-label="Anterior">‹</button>
+
+        <div class="cf-viewport" data-cf-viewport>
+          <div class="cf-track" data-cf-track>
+            <!-- 1ª foto começa maior (centro) -->
+            <figure class="cf-card">
+              <img
+                src="assets/images/carrossel-1.png"
+                alt="Croissant dourado"
+              />
+            </figure>
+            <figure class="cf-card">
+              <img
+                src="assets/images/carrossel-2.png"
+                alt="Chocolate quente com marshmallows"
+              />
+            </figure>
+            <figure class="cf-card">
+              <img
+                src="assets/images/carrossel-3.png"
+                alt="Interior de cafeteria"
+              />
+            </figure>
+            <figure class="cf-card">
+              <img src="assets/images/carrossel-4.png" alt="Latte art" />
+            </figure>
+            <figure class="cf-card">
+              <img src="assets/images/carrossel-5.png" alt="Croissant e café" />
+            </figure>
+          </div>
         </div>
+
+        <button class="cf-arrow next" aria-label="Próximo">›</button>
+        <div class="cf-dots" data-cf-dots></div>
+      </section>
+    </main>
+
+    <!-- SOBRE NÓS -->
+    <section class="about-section" id="sobre-nos">
+      <div class="about-container">
+        <div class="about-content">
+          <p class="section-label">Sobre nós</p>
+          <h2 class="section-title">
+            Bem-vinda a Bolo de Rolo
+            <span class="span-about-dimainha">DiMainha</span>
+          </h2>
+          <p class="section-description">
+            Sou <span class="strong-name">Lidiane Paiva</span>, pernambucana, formada em
+            Administração, com 23 anos de experiência em licitações, contratos e
+            setor financeiro em construtoras. Minha jornada empreendedora
+            começou há quatro anos, movida por uma saudade simples: o bolo de
+            rolo com sabor de mainha. Fiz uma receita para matar a vontade e
+            ela mudou meu caminho para sempre.
+          </p>
+
+          <p class="section-description">
+            Nasceu assim a <span class="strong-name swoosh-underline">DiMainha</span>, um autêntico bolo de rolo Pernambucano em
+            Fortaleza/CE, onde levo o sabor e a tradição da minha terra para
+            quem ama uma sobremesa artesanal de verdade. Aqui, cada fatia é
+            feita com cuidado, respeito à receita original e aquele toque de
+            afeto que desperta lembranças.
+          </p>
+
+          <p class="section-description">
+            Meu propósito é resgatar memórias afetivas através do sabor,
+            mantendo a originalidade e qualidade do bolo de rolo, enquanto inovo
+            em recheios e combinações que encantam nossos clientes. Entre o
+            clássico e o novo, buscamos sempre a melhor experiência.
+          </p>
+        </div>
+        <!-- <div class="about-image">
+                <img src="assets/images/img-about.png" alt="Coffee brewing">
+            </div> -->
+        <figure class="polaroid">
+          <img src="assets/images/img-about.png" alt="Latte art" />
+          <figcaption>Lidiane Paiva - Fundadora da DiMainha</figcaption>
+        </figure>
+      </div>
+    </section>
+    <!-- <section class="section about" id="about">
+    <div class="container two-col">
+      <div class="col">
+        <span class="eyebrow">Sobre nós</span>
+        <h2>Paixão por café, respeito pelos ingredientes</h2>
+        <p>Desde 2020, buscamos criar experiências memoráveis. Grãos selecionados, torra artesanal e receitas de família que acompanham cada xícara.</p>
+        <ul class="bullets">
+          <li>Torra em pequenos lotes</li>
+          <li>Parcerias com produtores sustentáveis</li>
+          <li>Ambiente acolhedor para trabalhar e relaxar</li>
+        </ul>
+      </div>
+      <div class="col media">
+        <img src="https://images.unsplash.com/photo-2396220?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Barista preparando café" />
+      </div>
+    </div>
+  </section> -->
+
+    <section class="section products" id="produtos">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Nossos clássicos</span>
+          <h2>De Pernambuco para Fortaleza</h2>
+        </div>
+
+        <div class="grid-cards">
+          <article class="p-card">
+            <img
+              src="assets/images/produto-1.png"
+              alt="Espresso"
+            />
+            <div class="info">
+              <h3>Clássico</h3>
+            </div>
+          </article>
+
+          <article class="p-card">
+            <img
+              src="assets/images/produto-2.png"
+              alt="Cappuccino"
+            />
+            <div class="info">
+              <h3>Mini Roll</h3>
+            </div>
+          </article>
+
+          <article class="p-card">
+            <img
+              src="assets/images/produto-3.png"
+              alt="Latte"
+            />
+            <div class="info">
+              <h3>Bolo de Casamento</h3>
+            </div>
+          </article>
+        </div>
+        <div class="cta-products">
+          <a class="cta" href="https://pedido.anota.ai/loja/di-mainha-bolo-de-rolo?f=ms" target="_blank">Faça seu pedido</a>
+        </div>
+      </div>
     </section>
 
-    <section class="about-section" id="about">
-        <div class="about-container">
-            <div class="about-content">
-                <p class="section-label">About Us</p>
-                <h2 class="section-title">Welcome to Mood Café</h2>
-                <p class="section-description">At Mood Café, we believe that great coffee is more than just a beverage—it's an experience. From our carefully sourced beans to our expertly crafted drinks, every cup tells a story of passion, quality, and dedication.</p>
-                <div class="about-features">
-                    <div class="feature-item">
-                        <h3>Artisan Roasting</h3>
-                        <p>We roast our beans in small batches to ensure the perfect flavor profile in every cup.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Sustainable Sourcing</h3>
-                        <p>We partner with farmers who share our commitment to quality and environmental responsibility.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Community Focus</h3>
-                        <p>More than a café, we're a gathering place where connections are made over great coffee.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about-image">
-                <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Coffee brewing">
-            </div>
+    <section class="evento-section" id="evento">
+      <div class="evento-container">
+        <div class="evento-content">
+          <p class="evento-label">Eventos</p>
+          <h2 class="evento-title">
+            Quer ter a 
+            <span class="span-about-dimainha">DiMainha</span> no seu evento?
+          </h2>
+          <p class="evento-description">
+            Fazemos desde o bolo naked até os doces de decoração.
+          </p>
+           <p class="evento-description">
+            <a class="cta-eventos" href="https://pedido.anota.ai/loja/di-mainha-bolo-de-rolo?f=ms" target="_blank">Solicite orçamento</a>
+          </p>
         </div>
+        <div class="evento-image">
+                <img src="assets/images/evento.png" alt="Coffee brewing">
+            </div>
+        <!-- <figure class="polaroid">
+          <img src="assets/images/img-about.png" alt="Latte art" />
+          <figcaption>Lidiane Paiva - Fundadora da DiMainha</figcaption>
+        </figure> -->
+      </div>
     </section>
 
-    <section class="process-section" id="process">
-        <div class="process-container">
-            <p class="section-label">Our Process</p>
-            <h2 class="section-title">From Bean to Cup</h2>
-            <div class="process-grid">
-                <div class="process-card">
-                    <div class="process-number">01</div>
-                    <h3>Sourcing</h3>
-                    <p>We travel the world to find the finest coffee beans from sustainable farms.</p>
-                </div>
-                <div class="process-card">
-                    <div class="process-number">02</div>
-                    <h3>Roasting</h3>
-                    <p>Each batch is carefully roasted to bring out the unique characteristics of the beans.</p>
-                </div>
-                <div class="process-card">
-                    <div class="process-number">03</div>
-                    <h3>Brewing</h3>
-                    <p>Our skilled baristas use precision techniques to create the perfect cup.</p>
-                </div>
-                <div class="process-card">
-                    <div class="process-number">04</div>
-                    <h3>Serving</h3>
-                    <p>Every drink is served with care and attention to detail.</p>
-                </div>
-            </div>
+    <!-- DEPOIMENTOS -->
+    <!-- <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Depoimentos</span>
+          <h2>O que dizem por aí</h2>
         </div>
+
+        <div class="t-slider" data-t-slider>
+          <div class="t-track">
+            <article class="t-card">
+              <p>
+                “O melhor café da cidade. A vibe é perfeita para trabalhar e a
+                equipe é incrível.”
+              </p>
+              <h4>Sarah Mitchell</h4>
+              <span>Designer</span>
+            </article>
+            <article class="t-card">
+              <p>
+                “Sou cliente diário. O cappuccino nunca decepciona e os pães são
+                sempre frescos.”
+              </p>
+              <h4>James Rodriguez</h4>
+              <span>Empreendedor</span>
+            </article>
+            <article class="t-card">
+              <p>
+                “Um achado! Ambiente acolhedor e cardápio caprichado. Recomendo
+                de olhos fechados.”
+              </p>
+              <h4>Emma Thompson</h4>
+              <span>Jornalista</span>
+            </article>
+          </div>
+
+          <div class="t-dots" data-t-dots></div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CONTATO -->
+    <!-- <section class="section contact" id="contact">
+      <div class="container two-col">
+        <div class="col">
+          <span class="eyebrow">Contato</span>
+          <h2 class="contato-section-title">Fale com a gente</h2>
+          <p class="muted">
+            Encomendas ou dúvidas, estamos aqui para ajudar.
+          </p>
+          <ul class="contact-list">
+            <li>Rua Visconde de Mauá, 2689 - Dionísio Torres</li>
+            <li>(85) 9 91415979</li>
+            <li>Segunda a Sexta das 09h às 17h</li>
+          </ul>
+        </div>
+        <div class="col">
+            <figure class="map-wrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.281808297424!2d-38.50302739999999!3d-3.748683399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7489467304959%3A0x84b10f972444384e!2sR.%20Visc.%20de%20Mau%C3%A1%2C%202689%20-%20Dion%C3%ADsio%20Torres%2C%20Fortaleza%20-%20CE%2C%2060125-161!5e0!3m2!1spt-BR!2sbr!4v1762824770457!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button class="map-toggle" aria-label="Ativar interação">Interagir</button>
+            </figure>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="evento-section" id="contatos">
+      <div class="evento-container">
+        <div class="evento-content">
+          <p class="evento-label">Contato</p>
+          <h2 class="evento-title">
+            Fale com a gente
+          </h2>
+          <ul class="contact-list">
+            <li>Rua Visconde de Mauá, 2689 - Dionísio Torres</li>
+            <li>(85) 9 91415979</li>
+            <li>Segunda a Sexta das 09h às 17h</li>
+          </ul>
+        </div>
+        <div class="evento-image">
+                <figure class="map-wrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.281808297424!2d-38.50302739999999!3d-3.748683399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7489467304959%3A0x84b10f972444384e!2sR.%20Visc.%20de%20Mau%C3%A1%2C%202689%20-%20Dion%C3%ADsio%20Torres%2C%20Fortaleza%20-%20CE%2C%2060125-161!5e0!3m2!1spt-BR!2sbr!4v1762824770457!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+          </div>
+        <!-- <figure class="polaroid">
+          <img src="assets/images/img-about.png" alt="Latte art" />
+          <figcaption>Lidiane Paiva - Fundadora da DiMainha</figcaption>
+        </figure> -->
+      </div>
     </section>
 
-    <section class="testimonials-section" id="testimonials">
-        <div class="testimonials-container">
-            <p class="section-label">Testimonials</p>
-            <h2 class="section-title">What Our Guests Say</h2>
-            <div class="testimonials-carousel">
-                <button class="carousel-arrow prev" id="prevBtn" aria-label="Previous">‹</button>
-                <div class="testimonials-wrapper" id="testimonialsWrapper">
-                    <div class="testimonial-card active">
-                        <p class="testimonial-text">"The best coffee I've ever had. The atmosphere is perfect for getting work done or just relaxing with friends."</p>
-                        <div class="testimonial-author">
-                            <h4>Sarah Mitchell</h4>
-                            <p>Regular Customer</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p class="testimonial-text">"Mood Café has become my daily ritual. The quality and consistency are unmatched."</p>
-                        <div class="testimonial-author">
-                            <h4>James Rodriguez</h4>
-                            <p>Coffee Enthusiast</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p class="testimonial-text">"A hidden gem! Great coffee, wonderful staff, and a cozy environment. Highly recommend!"</p>
-                        <div class="testimonial-author">
-                            <h4>Emma Thompson</h4>
-                            <p>Local Resident</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-arrow next" id="nextBtn" aria-label="Next">›</button>
-            </div>
-            <div class="carousel-indicators" id="carouselIndicators"></div>
-        </div>
-    </section>
-
-    <section class="menu-section" id="menu">
-        <div class="menu-container">
-            <p class="section-label">Our Menu</p>
-            <h2 class="section-title">Signature Drinks</h2>
-            <div class="menu-grid">
-                <div class="menu-card">
-                    <div class="menu-image">
-                        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Espresso">
-                    </div>
-                    <div class="menu-info">
-                        <h3>Classic Espresso</h3>
-                        <p>Rich and bold, our signature espresso blend</p>
-                        <span class="price">$4.50</span>
-                    </div>
-                </div>
-                <div class="menu-card">
-                    <div class="menu-image">
-                        <img src="https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cappuccino">
-                    </div>
-                    <div class="menu-info">
-                        <h3>Cappuccino</h3>
-                        <p>Creamy espresso with steamed milk and foam</p>
-                        <span class="price">$5.50</span>
-                    </div>
-                </div>
-                <div class="menu-card">
-                    <div class="menu-image">
-                        <img src="https://images.pexels.com/photos/1251175/pexels-photo-1251175.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Latte">
-                    </div>
-                    <div class="menu-info">
-                        <h3>Latte</h3>
-                        <p>Smooth espresso with velvety steamed milk</p>
-                        <span class="price">$5.00</span>
-                    </div>
-                </div>
-                <div class="menu-card">
-                    <div class="menu-image">
-                        <img src="https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cold Brew">
-                    </div>
-                    <div class="menu-info">
-                        <h3>Cold Brew</h3>
-                        <p>Slow-steeped for 18 hours, smooth and refreshing</p>
-                        <span class="price">$6.00</span>
-                    </div>
-                </div>
-                <div class="menu-card">
-                    <div class="menu-image">
-                        <img src="https://images.pexels.com/photos/2789328/pexels-photo-2789328.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mocha">
-                    </div>
-                    <div class="menu-info">
-                        <h3>Mocha</h3>
-                        <p>Espresso with chocolate and steamed milk</p>
-                        <span class="price">$6.50</span>
-                    </div>
-                </div>
-                <div class="menu-card">
-                    <div class="menu-image">
-                        <img src="https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pour Over">
-                    </div>
-                    <div class="menu-info">
-                        <h3>Pour Over</h3>
-                        <p>Single-origin coffee brewed to perfection</p>
-                        <span class="price">$7.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="reservation-section" id="reservation">
-        <div class="reservation-container">
-            <div class="reservation-content">
-                <p class="section-label">Reserve a Table</p>
-                <h2 class="section-title">Join Us</h2>
-                <p class="section-description">Reserve your spot at Mood Café. Whether it's a business meeting or a casual catch-up, we're here to make your experience memorable.</p>
-            </div>
-            <form class="reservation-form" id="reservationForm">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                        <span class="error-msg" id="nameError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                        <span class="error-msg" id="emailError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" required>
-                        <span class="error-msg" id="phoneError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" name="date" required>
-                        <span class="error-msg" id="dateError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Time</label>
-                        <input type="time" id="time" name="time" required>
-                        <span class="error-msg" id="timeError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests">Number of Guests</label>
-                        <select id="guests" name="guests" required>
-                            <option value="">Select</option>
-                            <option value="1">1 Guest</option>
-                            <option value="2">2 Guests</option>
-                            <option value="3">3 Guests</option>
-                            <option value="4">4 Guests</option>
-                            <option value="5">5 Guests</option>
-                            <option value="6">6+ Guests</option>
-                        </select>
-                        <span class="error-msg" id="guestsError"></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Special Requests</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Reserve Now</button>
-                <div class="success-msg" id="successMessage">
-                    Thank you! Your reservation has been received. We'll contact you shortly to confirm.
-                </div>
-            </form>
-        </div>
-    </section>
-
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-logo">mood</h3>
-                    <p>Crafting exceptional coffee experiences since 2020.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>123 Coffee Street</li>
-                        <li>Downtown, CA 90210</li>
-                        <li>Phone: (555) 123-4567</li>
-                        <li>Email: hello@moodcafe.com</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Hours</h4>
-                    <ul>
-                        <li>Monday - Friday</li>
-                        <li>7:00 AM - 8:00 PM</li>
-                        <li>Saturday - Sunday</li>
-                        <li>8:00 AM - 9:00 PM</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#reservation">Reservations</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Mood Café. All rights reserved.</p>
-            </div>
+      <div class="container f-grid">
+        <div>
+          <img class="logo-footer" src="assets/images/logo-footer.png">
         </div>
+        <div>
+          <h4>Links</h4>
+          <ul class="f-links">
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#products">O que vendemos</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul class="f-links">
+            <li>Rua Visconde de Mauá, 2689 - Dionísio Torres</li>
+            <li>(85) 9 91415979</li>
+            <li>Segunda a Sexta das 09h às 17h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">Feito com 💜 pela <a href="www.b8lab.com.br">B8 Lab</a></div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
