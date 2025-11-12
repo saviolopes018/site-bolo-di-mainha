@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mood Café — Brewed to perfection</title>
+    <title>DiMainha - Bolo de Rolo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,18 +28,26 @@
   <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-      <div class="nav-inner">
-        <a href="#home" class="brand"><img src="assets/images/logo.png" /></a>
-        <ul class="menu">
-          <li><a class="link" href="#sobre-nos">Sobre nós</a></li>
-          <li><a class="link" href="#produtos">Nossos clássicos</a></li>
-          <li><a class="link" href="#eventos">Eventos</a></li>
-          <li><a class="link" href="#contatos">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
+  <div class="nav-inner">
+    <a href="#home" class="brand"><img src="assets/images/logo.png" alt="DiMainha" /></a>
 
-    <!-- HERO -->
+    <!-- BOTÃO HAMBÚRGUER -->
+    <button class="nav-toggle" aria-label="Abrir menu" aria-controls="site-menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <!-- Dê um id ao menu -->
+    <ul class="menu" id="site-menu">
+      <li><a class="link" href="#sobre-nos">Sobre nós</a></li>
+      <li><a class="link" href="#produtos">Nossos clássicos</a></li>
+      <li><a class="link" href="#evento">Eventos</a></li>
+      <li><a class="link" href="#contatos">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
     <main class="hero" id="home">
       <header class="hero-head">
         <h1 class="hero-title">DiMainha</h1>
@@ -47,13 +55,11 @@
         <a class="cta" href="https://pedido.anota.ai/loja/di-mainha-bolo-de-rolo?f=ms" target="_blank">Faça seu pedido</a>
       </header>
 
-      <!-- CARROSSEL COVERFLOW -->
       <section class="coverflow" aria-roledescription="carousel">
         <button class="cf-arrow prev" aria-label="Anterior">‹</button>
 
         <div class="cf-viewport" data-cf-viewport>
           <div class="cf-track" data-cf-track>
-            <!-- 1ª foto começa maior (centro) -->
             <figure class="cf-card">
               <img
                 src="assets/images/carrossel-1.png"
@@ -86,7 +92,6 @@
       </section>
     </main>
 
-    <!-- SOBRE NÓS -->
     <section class="about-section" id="sobre-nos">
       <div class="about-container">
         <div class="about-content">
@@ -119,32 +124,12 @@
             clássico e o novo, buscamos sempre a melhor experiência.
           </p>
         </div>
-        <!-- <div class="about-image">
-                <img src="assets/images/img-about.png" alt="Coffee brewing">
-            </div> -->
         <figure class="polaroid">
           <img src="assets/images/img-about.png" alt="Latte art" />
           <figcaption>Lidiane Paiva - Fundadora da DiMainha</figcaption>
         </figure>
       </div>
     </section>
-    <!-- <section class="section about" id="about">
-    <div class="container two-col">
-      <div class="col">
-        <span class="eyebrow">Sobre nós</span>
-        <h2>Paixão por café, respeito pelos ingredientes</h2>
-        <p>Desde 2020, buscamos criar experiências memoráveis. Grãos selecionados, torra artesanal e receitas de família que acompanham cada xícara.</p>
-        <ul class="bullets">
-          <li>Torra em pequenos lotes</li>
-          <li>Parcerias com produtores sustentáveis</li>
-          <li>Ambiente acolhedor para trabalhar e relaxar</li>
-        </ul>
-      </div>
-      <div class="col media">
-        <img src="https://images.unsplash.com/photo-2396220?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Barista preparando café" />
-      </div>
-    </div>
-  </section> -->
 
     <section class="section products" id="produtos">
       <div class="container">
@@ -157,7 +142,7 @@
           <article class="p-card">
             <img
               src="assets/images/produto-1.png"
-              alt="Espresso"
+              alt="Clássico"
             />
             <div class="info">
               <h3>Clássico</h3>
@@ -166,8 +151,8 @@
 
           <article class="p-card">
             <img
-              src="assets/images/produto-2.png"
-              alt="Cappuccino"
+              src="assets/images/carrossel-1.png"
+              alt="Mini Roll"
             />
             <div class="info">
               <h3>Mini Roll</h3>
@@ -176,11 +161,11 @@
 
           <article class="p-card">
             <img
-              src="assets/images/produto-3.png"
+              src="assets/images/produto-2.png"
               alt="Latte"
             />
             <div class="info">
-              <h3>Bolo de Casamento</h3>
+              <h3>Lembrancinhas</h3>
             </div>
           </article>
         </div>
@@ -312,12 +297,12 @@
           <img class="logo-footer" src="assets/images/logo-footer.png">
         </div>
         <div>
-          <h4>Links</h4>
+          <h4>Navegação</h4>
           <ul class="f-links">
-            <li><a href="#about">Sobre nós</a></li>
-            <li><a href="#products">O que vendemos</a></li>
-            <li><a href="#testimonials">Depoimentos</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#sobre-nos">Sobre nós</a></li>
+            <li><a href="#produtos">Nossos clássicos</a></li>
+            <li><a href="#evento">Eventos</a></li>
+            <li><a href="#contatos">Contato</a></li>
           </ul>
         </div>
         <div>

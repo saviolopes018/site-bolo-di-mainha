@@ -105,3 +105,28 @@ function goTo(n, restart=false){
 
   // INIT — 1ª foto já MAIOR
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btn  = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('site-menu');
+  if(!btn || !menu) return;
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    btn.classList.toggle('is-open');
+  });
+
+  // Fecha ao clicar num link
+  menu.addEventListener('click', e => {
+    if(e.target.matches('a')) {
+      menu.classList.remove('open');
+      btn.classList.remove('is-open');
+    }
+  });
+
+  // Garante reset ao voltar pro desktop
+  matchMedia('(min-width:1025px)').addEventListener('change', e => {
+    if(e.matches){ menu.classList.remove('open'); btn.classList.remove('is-open'); }
+  });
+});
+
